@@ -1,0 +1,71 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: "Popping", sans-serif;
+}
+
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh; 
+    background: linear-gradient(135deg, #667, #764)
+ }
+
+ .card{
+    width: 90%;
+    max-width: 650px;
+ }
+
+ .area{
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+ }
+
+ .quote p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #333;
+    font-style: italic;
+ }
+
+ .author
+{
+    margin-top: 20px;
+}
+
+.author p{
+    color: #c940c9;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    background: #250544;
+}
+
+button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    background: #70558b;
+}
+
+button:hover{
+    background: #7b40d4;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+button:disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
+}
