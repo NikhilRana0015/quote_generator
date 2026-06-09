@@ -12,7 +12,7 @@ async function getQuote(){
     try{
     
 
-        const response = await fetch("http://api.quotable.io/random");
+        const response = await fetch("https://dummyjson.com/quotes/random");
 
         if(!response.ok){
             throw new Error("Failed to fetch quote");
@@ -20,8 +20,11 @@ async function getQuote(){
 
         const result = await response.json();
 
-        quoteText.textContent = `"${result.content}"`;
-        authorText.textContent = `-${result.author}`;
+
+
+        quoteText.textContent = result.quote;
+
+        authorText.textContent = `${result.author}`;
 
     }
     catch(error){
